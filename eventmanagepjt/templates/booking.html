@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Booking
+{% endblock %}
+
+{%load static%}
+{%block content%}
+<div class="container book p-3 mt-5 mb-5 text-center">
+    <h1 class="text-danger">Book your Events</h1>
+
+<form action="" method="POST">
+    {%csrf_token%}
+    {{ form.as_p}}
+    <button >Book now</button> 
+</form>
+</div>
+{%endblock%}
